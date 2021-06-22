@@ -1,0 +1,125 @@
+html,
+body {
+  background-image: url(../images/bg5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div#marco{
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  border: 1px solid #d0d0d0;
+  border-radius: 2%;
+  text-align: center;
+}
+
+
+img{
+    width: 300px;
+    height: 100px;    
+    object-fit: cover;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  font-size: 16px;
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.hr5 {
+  display: block;
+  margin-top: 20px;
+  border: 0;
+  border-top: thin double black;
+  height: 1px;
+  padding: 0;
+  color: black;
+  text-align: center;
+  height: fit-content;
+}
+.hr5::before {
+  content: "Tambien puedes iniciar sesión con";
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 16px;
+  padding: 0 1em;
+  background: #f5f5f5;    
+}
+
+i{
+  margin-right: 10px;
+}
+
+div a.fb_btn{
+  transition: background 0.15s;  
+  background-color: #3b5998;
+  border-color:  #3b5998;   
+  color: white;    
+}
+
+div a.fb_btn:hover{    
+  background-color: #2f4677;
+  border-color:  #2f4677;   
+  color: white;    
+}
+
+div a.google_btn{
+  transition: background 0.15s;  
+  border-color: black;
+  background-color: white;  
+  color: black;    
+}
+
+div a.google_btn:hover{
+  border-color: black;
+  background-color: #f0f0f0;  
+  color: black;    
+}
+
+div a.apple_btn{
+  transition: background 0.15s;  
+  background-color: rgb(19, 19, 19);
+  border-color: rgb(19, 19, 19);   
+  color: white;        
+}
+
+div a.apple_btn:hover{    
+  background-color: black;
+  border-color: black;   
+  color: white;        
+}
+
+div a#cuenta{
+  transition: background 0.15s;
+  margin-top: 15px;
+  display: inline-block;
+  color: cornflowerblue;
+}

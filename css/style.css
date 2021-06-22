@@ -1,0 +1,99 @@
+header div ul li a.nav-link:hover{
+    text-decoration: underline;
+}
+
+div#intro1{
+    background-color: #bbbbbb;
+    background-blend-mode: multiply;
+    background-image: url(../images/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#intro2{
+    background-color: #4d4d4d;
+    background-blend-mode: multiply;
+    background-image: url(../images/bg4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#enterprises img{
+    margin: 0 5%;
+    margin-bottom: 20px;
+    width: 90%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:710px) {
+    section#enterprises {
+        flex-basis: 90%;
+    }
+}
+
+
+
+img#logo{
+    width: 300px;
+    height: 50px;    
+    object-fit: cover;
+    margin-bottom: 20px;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+header form button:hover, div button:hover{
+    transition: background 0.15s;
+}
+
+header form .me-3{
+    width: 50%;
+}
+
+header form i{
+    margin-left: 10px;
+}
+
+header div i{
+    margin-left: 10px;
+}
+
+section h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 25px;
+}
+
+section div .card{
+    cursor: pointer;
+}
+
+footer div .logo{
+    margin-top: -20px;
+    display: block;
+    margin-left: -20px;
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+header a.navbar-brand {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+}
+
+header a.navbar-brand img {
+    width: 250px;
+    height: 76px;
+    object-fit: cover;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+footer, footer ul li a{
+    color: white;    
+}
+

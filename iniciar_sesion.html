@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/iniciar_sesion.css">
+
+    <!-- Responsive -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (max-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+        #marco{
+          flex-basis: 90%;
+        }
+        a img{
+          width: 70%;
+        }
+      }
+    </style>
+</head>
+
+<body class="text-center">  
+      <main class="form-signin">
+      <div id="marco">
+        <form>
+          <a href="index.html"><img class="" src="images/Logo BuscaTuEmpleo.png" alt="Logo empresa" width="100%" height="10%"></a>
+          <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
+      
+          <div class="form-floating mb-2">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Correo electrónico</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Contraseña</label>
+          </div>
+      
+          <div class="checkbox mt-2 mb-2">
+            <label>
+              <input type="checkbox" value="remember-me"> Recordar mi contraseña
+            </label>
+          </div>
+          <button class="w-100 btn btn-primary" type="submit">Iniciar sesión</button>
+  
+          <div class="hr5">
+            <a class="w-100 btn fb_btn mb-2" href=""><i class="fab fa-facebook"></i>Iniciar sesión con Facebook</a>
+            <a class="w-100 btn google_btn mb-2" href=""><i class="fab fa-google"></i>Iniciar sesión con Google</a>
+            <a class="w-100 btn apple_btn mb-2" href=""><i class="fab fa-apple"></i>Iniciar sesión con Apple</a>
+            <a id="cuenta" href="registrarse.html">¿Aún no tienes una cuenta?</a>
+            
+          <p class="mt-5 mb-3 text-muted">&copy; Buscatuempleoideal.com - 2021</p>
+        </div>
+        </form>
+      </div>
+      </main>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
