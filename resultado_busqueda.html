@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Busca tu empleo ideal</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de busqueda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  
+    <link rel="stylesheet" href="css/resultado_busqueda.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <!-- Responsive -->
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (max-width: 768px) {
+    <!-- Responsive -->
+    <style>
+      @media (max-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
       }
-      h2{
-        font-size: 22px;
+      h2#title{
+        font-size: 18px;
+        margin: 20px 0px 10px        
+      }
+      p#title-desc{
+        font-size: 12px;
+        margin: 10px 0px 10px 
       }
       footer iframe{
         width: 0%;
         height: 0%;
       }
     }
-  </style>
+    </style>
 </head>
 <body>
   <!-- Barra de navegación -->
@@ -54,7 +52,7 @@
                 <a class="nav-link active" href="#" aria-current="page">Publicar empleo</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Contacto
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -84,7 +82,7 @@
     </div>
   </header>
 
-<!-- Modal -->
+  <!-- Modal -->
 <div class="modal fade" id="modal-faq" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
@@ -144,169 +142,62 @@
   </div>
 </div>
 
-  <!-- Intro -->
-  <div id="intro1" class="bg-dark text-secondary px-4 py-5 text-center">
-    <div class="py-5">
-      <img id="logo" class="" src="images/Logo BuscaTuEmpleo.png" alt="Logo empresa" width="100%" height="10%">
-      <h1 class="display-6 fw-bold text-white">¡No esperes más!</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="fs-5 mb-2">Con buscatuempleoideal.com encuentra tu empleo ahnelado y el que cumpla con tus preferencias. Registrate, busca y aplíca de manera rapida y sencilla al trabajo que tu quieras.</p>
-      </div>
-    </div>
-  </div>
+  <h2 id="title">Resultados de busqueda de *Lo que se ingreso en la barra de busqueda*</h2>
+  <p id="title-desc">Se encontraron *Numeros de trabajos encontrados* de *Lo que se ingreso en la barra de busqueda* en total</p>
 
-  <div class="b-example-divider mb-0"></div>
   <!-- Trabajos -->
   <section>
-    <h2>Ofertas de trabajo más recientes</h2>
-    <div class="row row-cols-1 row-cols-md-3 m-3 g-3">
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="Logo empresa">
-          <div class="card-body">
-            <h5 class="card-title">Nombre del trabajo</h5>
-            <p class="card-text">Nombre de la empresa</p>
-            <p class="card-text">Dirección</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Subido hace 5 minutos</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="Logo empresa">
-          <div class="card-body">
-            <h5 class="card-title">Nombre del trabajo</h5>
-            <p class="card-text">Nombre de la empresa</p>
-            <p class="card-text">Dirección</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Subido hace 42 minutos</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="Logo empresa">
-          <div class="card-body">
-            <h5 class="card-title">Nombre del trabajo</h5>
-            <p class="card-text">Nombre de la empresa</p>
-            <p class="card-text">Dirección</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Subido hace 2 horas</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="Logo empresa">
-          <div class="card-body">
-            <h5 class="card-title">Nombre del trabajo</h5>
-            <p class="card-text">Nombre de la empresa</p>
-            <p class="card-text">Dirección</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Subido hace 2 horas</small>
-          </div>
-        </div>
-      </div>         
-    </div>
-  </section>
-  
-  <section>
-    <h2>Ofertas de trabajo aún disponibles</h2>
-    <div class="row row-cols-1 row-cols-md-3 m-3 g-3">
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="Logo empresa">
-          <div class="card-body">
-            <h5 class="card-title">Nombre del trabajo</h5>
-            <p class="card-text">Nombre de la empresa</p>
-            <p class="card-text">Dirección</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Subido hace 5 minutos</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="Logo empresa">
-          <div class="card-body">
-            <h5 class="card-title">Nombre del trabajo</h5>
-            <p class="card-text">Nombre de la empresa</p>
-            <p class="card-text">Dirección</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Subido hace 42 minutos</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="Logo empresa">
-          <div class="card-body">
-            <h5 class="card-title">Nombre del trabajo</h5>
-            <p class="card-text">Nombre de la empresa</p>
-            <p class="card-text">Dirección</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Subido hace 2 horas</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="Logo empresa">
-          <div class="card-body">
-            <h5 class="card-title">Nombre del trabajo</h5>
-            <p class="card-text">Nombre de la empresa</p>
-            <p class="card-text">Dirección</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Subido hace 2 horas</small>
-          </div>
-        </div>
-      </div> 
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="Logo empresa">
-          <div class="card-body">
-            <h5 class="card-title">Nombre del trabajo</h5>
-            <p class="card-text">Nombre de la empresa</p>
-            <p class="card-text">Dirección</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Subido hace 2 horas</small>
-          </div>
-        </div>
-      </div>          
-    </div>
-  </section>
-
-  <!-- Logos de empresas -->
-  <section id="enterprises">
-    <div>
-        <div id="logos">
-            <img src="Images/Logos_empleo.png" alt="Logos">
-        </div>
-    </div>        
-  </section>
-
-  <!-- Intro 2 -->  
-  <div id="intro2" class="bg-dark text-secondary px-4 py-5 text-center">
-    <div class="py-5">      
-      <h1 class="display-6 fw-bold text-white">¿Porque elegirnos?</h1>
-      <br>
-      <div class="col-lg-6 mx-auto">
-        <p class="fs-5 mb-2">buscatuempleoideal.com es un sitio web de empleos cuyo objetivo es hacer de que nuestros usuarios encuentren su trabajo ideal con miles de ofertas que se actualizán de forma constante, todos estos empleos son publicados en diferentes países, regístrate, crea tu perfil y postulate a tu trabajo ideal.
-          <br><br>
-          Tu proximo empleo espera por ti.</p>
+    <!-- Trabajo 1 -->
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="Logo empresa">
+      <div class="card-body">
+        <h5 class="card-title">Nombre del trabajo</h5>
+        <p class="card-text">Nombre de la empresa</p>
+        <p class="card-text">Dirección</p>        
+        <small class="text-muted">Subido hace 5 minutos</small>             
       </div>
     </div>
-  </div>
+    <!-- Trabajo 2 -->
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="Logo empresa">
+      <div class="card-body">
+        <h5 class="card-title">Nombre del trabajo</h5>
+        <p class="card-text">Nombre de la empresa</p>
+        <p class="card-text">Dirección</p>        
+        <small class="text-muted">Subido hace 5 minutos</small>             
+      </div>
+    </div>
+    <!-- Trabajo 3 -->
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="Logo empresa">
+      <div class="card-body">
+        <h5 class="card-title">Nombre del trabajo</h5>
+        <p class="card-text">Nombre de la empresa</p>
+        <p class="card-text">Dirección</p>        
+        <small class="text-muted">Subido hace 5 minutos</small>             
+      </div>
+    </div>
+    <!-- Trabajo 4 -->
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="Logo empresa">
+      <div class="card-body">
+        <h5 class="card-title">Nombre del trabajo</h5>
+        <p class="card-text">Nombre de la empresa</p>
+        <p class="card-text">Dirección</p>        
+        <small class="text-muted">Subido hace 5 minutos</small>             
+      </div>
+    </div>
+    <!-- Trabajo 5 -->
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="Logo empresa">
+      <div class="card-body">
+        <h5 class="card-title">Nombre del trabajo</h5>
+        <p class="card-text">Nombre de la empresa</p>
+        <p class="card-text">Dirección</p>        
+        <small class="text-muted">Subido hace 5 minutos</small>             
+      </div>
+    </div>
+  </section>
 
   <!-- footer -->  
   <footer class="bd-footer py-5" style="background-color: #00B3DB;">         

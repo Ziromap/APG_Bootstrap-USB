@@ -1,0 +1,24 @@
+body h2#title, p#title-desc{
+    text-align: center;
+}
+
+body h2{
+    margin-top: 30px;
+}
+
+section{
+    margin: 0 5%;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+section > div{
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 2px hsl(0, 0%, 88%);
+    transition: box-shadow 500ms;
+}
+
+section > div:hover{    
+    box-shadow: 2px 2px 5px 2px gray;
+}

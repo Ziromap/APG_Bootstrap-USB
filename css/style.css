@@ -65,7 +65,13 @@ section h2{
 }
 
 section div .card{
+    box-shadow: 2px 2px 5px 2px hsl(0, 0%, 88%);
+    transition: box-shadow 500ms;
     cursor: pointer;
+}
+
+section div .card:hover{
+    box-shadow: 2px 2px 5px 2px gray;
 }
 
 footer div .logo{
