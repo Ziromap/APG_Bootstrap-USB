@@ -28,8 +28,22 @@
         height: 50%;
       }
       div#btn{
-        margin-top: 20px;
-        margin-left: 10%;
+        margin-top: 10px;
+      }      
+    }
+
+    @media (max-width: 375px){
+      header a.navbar-brand img{
+        width: 200px;
+        height: 70px;
+      }
+      header a.navbar-brand img:hover{
+        width: 220px;
+        height: 70px;
+      }
+      h2#title{
+        font-size: 16px;
+        margin: 20px 0px 10px        
       }
     }
     </style>
@@ -72,14 +86,14 @@
             </ul>
             <form class="d-flex" method="GET" action="resultado_busqueda.html">
               <input class="form-control me-2" type="search" placeholder="Ej. Limpieza" aria-label="Search">
-              <button class="btn btn-outline-light me-3" type="submit">Buscar<i class="fas fa-search"></i></button>
+              <button class="btn btn-outline-light me-3" type="submit">Buscar</button>
             </form>
             <div id="btn" class="d-flex" >
               <a href="iniciar_sesion.html">
-                <button class="btn btn-outline-light me-2">Iniciar sesion<i class="fas fa-user"></i></button>
+                <button class="btn btn-outline-light me-2">Iniciar sesion</button>
               </a>
               <a href="registrarse.html">
-                <button class="btn btn-outline-light me-2">Registrarse<i class="fas fa-user-plus"></i></button>
+                <button class="btn btn-outline-light me-2">Registrarse</button>
               </a>
             </div>
             <!-- <form id="btn" class="d-flex" method="GET" action="registrarse.html">
