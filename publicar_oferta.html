@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/publicar_oferta.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Publicar empleo</title>
+
+    <!-- Responsive -->
+    <style>
+        @media (max-width: 768px) {
+        h2{
+            font-size: 22px;
+        }
+        label{
+            font-size: 14px;
+        }
+
+        form#jobs{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        
+        footer iframe{
+        width: 100%;
+        height: 50%;        
+      }
+      div#btn{
+        margin-top: 20px;
+        margin-left: 10%;
+      }
+    }    
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar navbar-dark" style="background-color: #0090b1;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/Logo BuscaTuEmpleo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#modal-faq" style="cursor: pointer;">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="publicar_oferta.html" aria-current="page">Publicar empleo</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  Contacto
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://api.whatsapp.com/send?phone=+50575185635&text=Hola, esto es solo un texto de prueba" target="_blank">WhatsApp</a></li>
+                  <li><a class="dropdown-item" href="https://facebook.com/ziromapdsgns" target="_blank">Facebook</a></li>
+                  <li><a class="dropdown-item" href="https://twitter.com/ziromapdesigns" target="_blank">Twitter</a></li>
+                  <li><a class="dropdown-item" href="https://instagram.com/ziromapdesigns" target="_blank">Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://t.me/ziromapdesignsofficial" target="_blank">Telegram</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=ziromapdesigns@gmail.com&body=Hola, esto es un texto de prueba" target="_blank">Gmail</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" method="GET" action="resultado_busqueda.html">
+              <input class="form-control me-2" type="search" placeholder="Ej. Limpieza" aria-label="Search">
+              <button class="btn btn-outline-light me-3" type="submit">Buscar<i class="fas fa-search"></i></button>
+            </form>
+            <div id="btn" class="d-flex" >
+              <a href="iniciar_sesion.html">
+                <button class="btn btn-outline-light me-2">Iniciar sesion<i class="fas fa-user"></i></button>
+              </a>
+              <a href="registrarse.html">
+                <button class="btn btn-outline-light me-2">Registrarse<i class="fas fa-user-plus"></i></button>
+              </a>
+            </div>
+            <!-- <form id="btn" class="d-flex" method="GET" action="registrarse.html">
+              
+            </form> -->
+          </div>
+        </div>      
+      </nav>      
+    </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-faq" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Preguntas frecuentes (FAQ)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <class class="modal-body">
+          <div>
+            <h5>¿Qué es buscatuempleoideal.com?</h5>
+            <p>Buscatuempleoideal.com es un sitio web de empleos cuyo objetivo es hacer de que nuestros usuarios
+              encuentren su trabajo ideal con miles de ofertas que se actualizán de forma constante, todos estos empleos
+              son publicados en diferentes países, regístrate, crea tu perfil y postulate a tu trabajo ideal. Tu proximo 
+              empleo espera por ti.</p>
+  
+              <br>
+  
+              <h5>¿Qué puedo hacer aquí?</h5>
+              <p>En buscatuempleoideal.com puedes seleccionar y aplicar al trabajo que más te guste con unos simples clicks y ya, tambien puedes buscar con respecto a tus gustos mediante la barra de busqueda.</p>
+  
+              <br>
+  
+              <h5>¿Cómo puedo hacer una oferta de trabajo?</h5>
+              <p>Es tan sencillo como ir a la página principal, selecciona <strong>Publicar Empleo</strong> en la barra de navegación, y llena el formulario con los datos respectivos. Uno de nuestros agentes revisará su solicitud y lo contactará en caso de que sea necesario.
+              A continuacion, un breve video de como publicar tu oferta</p>
+  
+              <video preload="metadata" muted controls width="100%" height="auto" style="text-align: center;">
+                <source src="Videos/howToCreateOffert.mp4">
+              </video>
+  
+              <br>
+              <br>
+  
+              <h5>¿Debo tener una cuenta para aplicar a algun trabajo?</h5>
+              <p>Claro, teniendo una cuenta podras seleccionar y aplicar a cualquier trabajo solo con un botón ya que, al tener todos tus datos en tu cuenta, al dar a "Aplicar" este automaticamente enviara tus datos personales al que publicó la oferta de empleo (Siempre y cuando usted ingreso esos datos).</p>
+  
+              <br>
+  
+              <h5>¿Quien es el desarrollador de este sitio web?</h5>
+              <p>Jarov Bayardo Dávila Larios | N.Carnet: 2018-0948U</p>
+  
+              <br>
+  
+              <h5>¿Cómo puedo contactar con el desarrollador?</h5>
+              <p>Puedes hacerlo por correo electronico
+                <a target="_blank" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=ziromapdesigns@gmail.com&subject=Duda%20sobre%20buscatuempleoideal">(Gmail)</a>
+                o puedes hacerlo por
+                <a target="_blank" href="https://www.facebook.com/ziromapdsgns">Facebook</a>,
+                <a target="_blank" href="https://www.twitter.com/ziromapdesigns">Twitter</a>,
+                <a target="_blank" href="https://www/instagram.com/ziromapdesigns">Instagram</a>,              
+                <a href="https://api.whatsapp.com/send?phone=+50575185635&text=Hola, esto es solo un texto de prueba" target="_blank">WhatsApp</a>              
+                o <a target="_blank" href="https://t.me/ziromapdesignsofficial">Telegram</a>.
+              </p>
+            </div>
+        </class>   
+      </div>
+    </div>
+    </div>
+
+    <!-- Titulo -->
+    <h2>Formulario para publicar empleo</h2>
+
+    <!-- Formulario -->
+    <main>
+    <form id="jobs">
+        <div class="mb-3">
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="floatingInput" placeholder="nombre empresa">
+                <label for="floatingInput">Nombre de la empresa</label>                
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="floatingInput" placeholder="nombre empresa">
+                <label for="floatingInput">Dirección</label>                
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Elige el logo de tu empresa</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Elegir un plan definido:
+                </label>
+            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Gratis (Hasta 3 días)</option>
+                <option value="1">Profesional (Hasta 20 días)</option>
+                <option value="2">Corporativo (Hasta 1 mes + Ventajas adicionales)</option>
+              </select>
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Elegir un plan personalizado:
+                </label>                
+            </div>
+            <input class="form-control" type="date" id="formDate">
+        </div>
+        
+        <button class="w-100 btn btn-primary" type="submit">Siguiente</button>
+    </form>
+    </main>
+
+    <!-- footer -->  
+    <footer class="bd-footer py-5" style="background-color: #00B3DB;">         
+    <div class="container py-5">      
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="logo" src="images/Logo BuscaTuEmpleo.png" alt=""></img>
+          <p>&copy; 2021 - Todos los derechos reservados</p>
+          <p>Managua - Nicaragua</p>
+          <p id="reloj"></p>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Acerca de</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#modal-faq" style="cursor: pointer; color: white; text-decoration: underline;">FAQ</a>
+            </li>           
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Contacto</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a target="_blank" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=ziromapdesigns@gmail.com&body=Hola, esto es un texto de prueba">Gmail</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/ziromapdsgns" target="_blank">Facebook</a>
+            </li>            
+            <li>
+              <a href="https://www.twitter.com/ziromapdesigns" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ziromapdesigns" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=+50575185635&text=Hola, esto es solo un texto de prueba" target="_blank">WhatsApp</a>
+            </li>
+            <li>
+              <a href="https://www.t.me/ziromapdesignsofficial" target="_blank">Telegram</a>
+            </li>            
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Otros</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a href="https://unsplash.com/t/nature">Imagenes usadas</a>
+            </li>           
+          </ul>
+        </div>
+        <!-- <div class="col-6 col-md"></div>
+        <div class="col-6 col-md"></div> -->
+        <div class="col-6 col-md">
+          <h5>¿Donde nos ubicamos?</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.6373895808924!2d-86.22629628565328!3d12.136944235926562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fe7867ce5fad%3A0x842c4aeae5cf3cda!2sUniversidad%20Nacional%20de%20Ingenier%C3%ADa%20(RUPAP)!5e0!3m2!1ses-419!2sni!4v1623696860922!5m2!1ses-419!2sni" width="400" height="300" style="border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>        
+      </div>      
+    </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/reloj.js"></script>
+</body>
+</html>

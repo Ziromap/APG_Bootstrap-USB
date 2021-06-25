@@ -26,8 +26,12 @@
         font-size: 22px;
       }
       footer iframe{
-        width: 0%;
-        height: 0%;
+        width: 100%;
+        height: 50%;
+      }
+      div#btn{
+        margin-top: 20px;
+        margin-left: 10%;
       }
     }
   </style>
@@ -51,7 +55,7 @@
                 <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#modal-faq" style="cursor: pointer;">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#" aria-current="page">Publicar empleo</a>
+                <a class="nav-link active" href="publicar_oferta.html" aria-current="page">Publicar empleo</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
@@ -72,12 +76,17 @@
               <input class="form-control me-2" type="search" placeholder="Ej. Limpieza" aria-label="Search">
               <button class="btn btn-outline-light me-3" type="submit">Buscar<i class="fas fa-search"></i></button>
             </form>
-            <form class="d-flex" method="GET" action="iniciar_sesion.html">
-              <button class="btn btn-outline-light me-2">Iniciar sesion<i class="fas fa-user"></i></button>
-            </form>
-            <form class="d-flex" method="GET" action="registrarse.html">
-              <button class="btn btn-outline-light me-2">Registrarse<i class="fas fa-user-plus"></i></button>
-            </form>
+            <div id="btn" class="d-flex" >
+              <a href="iniciar_sesion.html">
+                <button class="btn btn-outline-light me-2">Iniciar sesion<i class="fas fa-user"></i></button>
+              </a>
+              <a href="registrarse.html">
+                <button class="btn btn-outline-light me-2">Registrarse<i class="fas fa-user-plus"></i></button>
+              </a>
+            </div>
+            <!-- <form id="btn" class="d-flex" method="GET" action="registrarse.html">
+              
+            </form> -->
           </div>
         </div>      
       </nav>      
@@ -316,6 +325,7 @@
           <img class="logo" src="images/Logo BuscaTuEmpleo.png" alt=""></img>
           <p>&copy; 2021 - Todos los derechos reservados</p>
           <p>Managua - Nicaragua</p>
+          <p id="reloj"></p>
         </div>
         <div class="col-6 col-md">
           <h5>Acerca de</h5>
@@ -359,9 +369,9 @@
         <!-- <div class="col-6 col-md"></div>
         <div class="col-6 col-md"></div> -->
         <div class="col-6 col-md">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.6373895808924!2d-86.22629628565328!3d12.136944235926562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fe7867ce5fad%3A0x842c4aeae5cf3cda!2sUniversidad%20Nacional%20de%20Ingenier%C3%ADa%20(RUPAP)!5e0!3m2!1ses-419!2sni!4v1623696860922!5m2!1ses-419!2sni" width="500" height="300" style="border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
-        </div> 
-        <p id="reloj"></p>
+          <h5>¿Donde nos ubicamos?</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.6373895808924!2d-86.22629628565328!3d12.136944235926562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fe7867ce5fad%3A0x842c4aeae5cf3cda!2sUniversidad%20Nacional%20de%20Ingenier%C3%ADa%20(RUPAP)!5e0!3m2!1ses-419!2sni!4v1623696860922!5m2!1ses-419!2sni" width="400" height="300" style="border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>        
       </div>      
     </div>
   </footer>

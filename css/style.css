@@ -31,8 +31,6 @@ section#enterprises img{
     }
 }
 
-
-
 img#logo{
     width: 300px;
     height: 50px;    
@@ -92,11 +90,17 @@ header a.navbar-brand {
 }
 
 header a.navbar-brand img {
+    transition: width 0.5s;
     width: 250px;
-    height: 76px;
+    height: 75px;
     object-fit: cover;
     -webkit-filter: invert(1);
     filter: invert(1);
+}
+
+header a.navbar-brand img:hover{
+    width: 280px;
+    height: 75px;
 }
 
 footer, footer ul li a{
